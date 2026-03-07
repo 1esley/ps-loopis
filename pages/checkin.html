@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Checkin</title>
+</head>
+<body class="checkin">
+    <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+      <div class="nav_right">
+        <a href="./login.html" class="nav-admin"><i class="ri-logout-box-r-line"></i> Sair</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="checkin-wrap">
+    <div class="page-head">
+      <div class="page-text">
+        <h1>Check-in do dia</h1>
+        <p>Resposta anônima · leva menos de 1 minuto</p>
+      </div>
+      <div class="page-date">
+        <i class="ri-calendar-line"></i>
+        <span id="dateLabel"></span>
+      </div>
+    </div>
+
+
+    <div class="card" id="termoCard">
+      <div class="card-title">Como está sua produtividade hoje?</div>
+      <div class="card-sub">Selecione o nível que melhor descreve seu momento</div>
+
+      <div class="termo-steps" id="termoSteps">
+        <button class="termo-btn" data-val="1">
+          <img src="../assets/baixo.png" alt="Baixa">
+          <span>Baixa</span>
+        </button>
+        <button class="termo-btn" data-val="2">
+            <img src="../assets/medio.png" alt="Media">
+          <span>Média</span>
+        </button>
+        <button class="termo-btn" data-val="3">
+            <img src="../assets/alto.png" alt="Alta">
+          <span>Alta</span>
+        </button>
+        <button class="termo-btn" data-val="4">
+            <img src="../assets/max.png" alt="Maxima">
+          <span>Máxima</span>
+        </button>
+        <button class="termo-btn" data-val="5">
+            <img src="../assets/foco.png" alt="Foco">
+          <span>Foco</span>
+        </button>
+      </div>
+
+      <div class="termo-wrap">
+        <div class="termo-bar" id="termoBar"></div>
+      </div>
+    </div>
+
+    <div class="card" id="complaintCard">
+      <div class="card-title">Tem algo a reportar? <span style="font-weight:400;color:var(--text-mind)">(opcional)</span></div>
+      <div class="card-sub">Anônimo · selecione a categoria que melhor se encaixa</div>
+
+      <div class="section-label">Categoria</div>
+      <div class="check-grid" id="catGrid">
+        <button class="check" data-cat="Ambiente"><i class="ri-temp-hot-line"></i> Ambiente</button>
+        <button class="check" data-cat="Gestão"><i class="ri-user-star-line"></i> Gestão</button>
+        <button class="check" data-cat="Processos"><i class="ri-flow-chart"></i> Processos</button>
+        <button class="check" data-cat="Infraestrutura"><i class="ri-computer-line"></i> Infraestrutura</button>
+        <button class="check" data-cat="Comunicação"><i class="ri-chat-3-line"></i> Comunicação</button>
+        <button class="check" data-cat="Bem-estar"><i class="ri-mental-health-line"></i> Bem-estar</button>
+      </div>
+
+
+      <div class="section-label" style="margin-top:1.25rem;">Descreva (opcional)</div>
+      <textarea id="complaintText" class="complaint-textarea" placeholder="Conte um pouco mais sobre o que está acontecendo..."></textarea>
+
+      <button class="btn btn-brand" id="submitBtn" disabled style="width:100%;justify-content:center;margin-top:1.5rem;border-radius:10px;">
+        <i class="ri-send-plane-line"></i> Enviar check-in
+      </button>
+    </div>
+    <div class="card success-state" id="successCard">
+      <i class="ri-checkbox-circle-line"></i>
+      <h2>Check-in enviado!</h2>
+      <p>Obrigado. Sua resposta foi registrada de forma anônima.</p>
+    </div>
+
+  </div>
+
+  <script src="../main.js"></script>
+</body>
+</html>
