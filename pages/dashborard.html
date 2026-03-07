@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>Painel RH</title>
+</head>
+<body class="dashborard"> 
+    <nav class="navbar">
+        <div class="container navbar-inner">
+          <a href="../index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+
+        <div class="nav_right">
+            <span class="badge-restricted"><i class="ri-lock-2-line"></i> Acesso restrito</span>
+            <button class="btn-pdf" onclick="window.print()">
+                <i class="ri-file-pdf-line"></i> Salvar PDF
+            </button>
+            <a href="../pages/login.html" class="nav-admin">
+                <i class="ri-logout-box-r-line"></i> Sair
+            </a>
+        </div>
+        </div>
+    </nav>
+
+<div class="content">
+
+    <div class="page-head">
+        <h1>Resumo do dia</h1>
+        <p id="dateLabel"></p>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi">
+            <div class="kpi-icon green"><i class="ri-mental-health-line"></i></div>
+            <div style="flex:1">
+                <div class="kpi-val" id="prodPct">—</div>
+                <div class="kpi-label">Se sentem produtivos</div>
+                <div class="mini-bar-wrap">
+                    <div class="mini-bar" id="prodBar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="kpi">
+            <div class="kpi-icon yellow"><i class="ri-chat-warning-line"></i></div>
+            <div style="flex:1">
+                <div class="kpi-val" id="compCount">—</div>
+                <div class="kpi-label">Reclamações hoje</div>
+                <div class="mini-bar-wrap">
+                    <div class="mini-bar" id="compBar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-head">
+            <div>
+                <div class="card-title">Nível de produtividade</div>
+                <div class="card-sub">Check-ins anônimos de hoje</div>
+            </div>
+            <span class="badge green" id="prodBadge">—</span>
+        </div>
+        <div class="prod-rows" id="prodChart"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-head">
+            <div>
+                <div class="card-title">Reclamações</div>
+                <div class="card-sub">Registros anônimos · requerem atenção</div>
+            </div>
+            <span class="badge red" id="compBadge">—</span>
+        </div>
+        <div class="complaint-list" id="complaintList"></div>
+    </div>
+  </div>
+
+  <script src="."></script>
+</body>
+</html>

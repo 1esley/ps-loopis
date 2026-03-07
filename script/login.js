@@ -6,6 +6,9 @@ function cadastro(){
     nome = document.getElementById("usuario_cadastro").value;
     senha = document.getElementById("senha_cadastro").value;
 
+    if (!nome && !senha){
+        return;
+    }
     //ADICIONAR NOVO USUARIO NA LISTA DE USUARIOS
     usuarios.push({
         nome: nome,
@@ -23,17 +26,15 @@ function login(){
     let usuario = document.getElementById("usuario").value;
     let senha = document.getElementById("senha").value;
 
-    let logado = false;
     for(let i=0; i<usuarios.length; i++){
         if(usuario === usuarios[i].nome && senha === usuarios[i].senha){
-            logado = true;
-            console.log("DEUCERTO");
+            localStorage.setItem("usuario_logado", usuario);
             window.location.assign("./index.html");
             return;
         }
     }
-    if(!logado){
-        console.log("USUARIO OU SENHA INCORRETO");
-    }
+    //SE O USUARIO OU SENHA ESTIVEREM INCORRETOS
+    console.log("USUARIO OU SENHA INCORRETO");
+    
 
 }
