@@ -1,8 +1,9 @@
 //VERIFICAR SE EXISTE USUARIO LOGADO, CASO NAO, VOLTAR PARA PAGINA DE LOGIN
-let usuario = localStorage.getItem("usuario_logado");
-if(!usuario){
-    window.location.href = "login.html";
-}
+// (COMENTEI PARA CONSEGUIR VER A PAGINA [O LOGIN ESTA COM DEFEITO])
+// let usuario = localStorage.getItem("usuario_logado");
+// if(!usuario){
+//     window.location.href = "login.html";
+// }
 
 //LOGOUT DE USUARIO
 function logout(){

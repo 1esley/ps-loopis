@@ -3,8 +3,8 @@ function cadastro(){
     //PEGAR TODOS OS USUARIOS CADASTRADOS
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    nome = document.getElementById("usuario_cadastro").value;
-    senha = document.getElementById("senha_cadastro").value;
+    nome = document.getElementById("userCadastro").value;
+    senha = document.getElementById("senhaCadastro").value;
 
     if (!nome && !senha){
         return;
@@ -23,8 +23,8 @@ function login(){
     //PEGAR TODOS OS USUARIOS CADASTRADOS
     let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    let usuario = document.getElementById("usuario").value;
-    let senha = document.getElementById("senha").value;
+    let usuario = document.getElementById("userLogin").value;
+    let senha = document.getElementById("senhaLogin").value;
 
     for(let i=0; i<usuarios.length; i++){
         if(usuario === usuarios[i].nome && senha === usuarios[i].senha){

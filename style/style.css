@@ -121,8 +121,8 @@ img{display: block;max-width: 100%;}
 .card-sub{font-size:.78rem;color:var(--text-mind);}
 .badge{display:inline-flex;align-items:center;font-size:.72rem;font-weight:700;padding:.3rem .75rem;border-radius:99px;white-space:nowrap;}
 .badge.green{background:#fff;color:#008807;}
-.badge.red{background:#fff;color:#f4f800fa;}
-.badge.yellow{background:#fff;color:#ff0101;}
+.badge.red{background:#fff;color:#ff0101;}
+.badge.yellow{background:#fff;color:#f4f800fa;}
 .kpi-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:1.5rem;}
 .kpi{background:#fff;padding:1.25rem 1rem;display:flex;align-items:center;transition:var(--transition);}
 .kpi-val{font-size:2rem;font-weight:550;color:var(--text-dark);line-height:1;}
