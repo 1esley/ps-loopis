@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
@@ -10,30 +10,35 @@
 <body class="dashborard"> 
     <nav class="navbar">
         <div class="container navbar-inner">
-          <a href="../index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+          <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
 
         <div class="nav_right">
             <span class="badge-restricted"><i class="ri-lock-2-line"></i> Acesso restrito</span>
-            <button class="btn-pdf" onclick="window.print()">
+            <button class="btn-outline btn-outline-primary" onclick="window.print()">
                 <i class="ri-file-pdf-line"></i> Salvar PDF
             </button>
-            <a href="../pages/login.html" class="nav-admin">
+            <a href="./login.html" class="btn-outline btn-outline-muted">
                 <i class="ri-logout-box-r-line"></i> Sair
             </a>
         </div>
         </div>
     </nav>
 
-<div class="content">
+<div class="page-wrap">
 
     <div class="page-head">
-        <h1>Resumo do dia</h1>
-        <p id="dateLabel"></p>
+        <div class="page-text">
+            <h1>Resumo do dia</h1>
+            <p>Painel de bem-estar · VitalCorp RH</p>
+        </div>
+        <div class="page-date">
+            <i class="ri-calendar-line"></i>
+            <span id="dateLabel"></span>
+        </div>
     </div>
 
     <div class="kpi-row">
         <div class="kpi">
-            <div class="kpi-icon green"><i class="ri-mental-health-line"></i></div>
             <div style="flex:1">
                 <div class="kpi-val" id="prodPct">—</div>
                 <div class="kpi-label">Se sentem produtivos</div>
@@ -43,7 +48,7 @@
             </div>
         </div>
         <div class="kpi">
-            <div class="kpi-icon yellow"><i class="ri-chat-warning-line"></i></div>
+            <div class=""></div>
             <div style="flex:1">
                 <div class="kpi-val" id="compCount">—</div>
                 <div class="kpi-label">Reclamações hoje</div>
@@ -77,6 +82,6 @@
     </div>
   </div>
 
-  <script src="."></script>
+  <script src="../main.js"></script>
 </body>
 </html>

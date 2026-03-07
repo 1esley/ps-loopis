@@ -4,23 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles.css"/>
     <title>VitalCorp</title>
   </head>
   <body>
 
     <nav class="navbar">
         <div class="container navbar-inner">
-          <a href="../index.htm" class="navbar-logo"><img src="./assets/logo.png" alt="Logo VitalCorp"></a>
+          <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#sobre">Sobre a Plataforma</a></li>
                 <li><a href="#beneficios">Benefícios</a></li>
                 <li><a href="#como-usar">Como Usar</a></li>
-                <li><button type="button" onclick="logout()">Logout</button></li>
             </ul>
             <div class="nav-cta">
-                <a href="./pages/dashborard.html" class="nav-admin"><i class="ri-lock-2-line"></i>Painel RH</a>
-                <a href="./pages/login.html" class="btn btn-brand">Login<i class="ri-arrow-right-line"></i></a>
+                <a href="./dashborard.html" class="nav-admin"><i class="ri-lock-2-line"></i>Painel RH</a>
+                <a href="./login.html" class="btn btn-brand">Login<i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="toggle-btn" id="toggleBtn" aria-label="Abrir menu" role="button">
                 <i class="ri-menu-fill" id="toggleIcon"></i>
@@ -42,12 +41,12 @@
                 </p>
             </div>
         <div class="home-btns">
-            <a href="./pages/checkin.html" class="btn btn-check">Fazer meu Check-in</a>
+            <a href="./checkin.html" class="btn btn-check">Fazer meu Check-in</a>
             <a href="#como-usar" class="btn-user">Como funciona?</a>
         </div>
 
         <div class="home-img">
-            <img src="./assets/header.png" alt="VitalCorp">
+            <img src="../assets/header.png" alt="VitalCorp">
         </div>
         </div>
     </section>
@@ -56,7 +55,7 @@
     <section class="sobre" id="sobre">
         <div class="block-one">
             <div class="sobre-img">
-                <img src="./assets/img-2.jpg" alt="">
+                <img src="../assets/img-2.jpg" alt="">
             </div>
         </div>
         <div class="sobre-txt"><h1>Sobre a Plataforma</h1></div>
@@ -71,7 +70,7 @@
         </div>
         <div class="block-two">
             <div class="sobre-img">
-                <img src="./assets/img-3.jpg" alt="">
+                <img src="../assets/img-3.jpg" alt="">
             </div>
         </div>
         <div class="sobre-txt"><h1>Clima Organizacional</h1></div>
@@ -127,10 +126,10 @@
         <div class="container">
             <h2>Pronto para começar?</h2>
             <p>Faça seu check-in agora. É rápido, gratuito e completamente anônimo.</p>
-            <a href="./pages/checkin.html" class="btn btn_cta">Fazer meu Check-in <i class="ri-arrow-right-line"></i></a>
+            <a href="./checkin.html" class="btn btn-cta">Fazer meu Check-in <i class="ri-arrow-right-line"></i></a>
         </div>
     </section>
 
-    <script src="../script/script.js"></script>
+    <script src="../main.js"></script>
   </body>
 </html>
