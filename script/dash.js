@@ -11,7 +11,7 @@ function logout() {
     localStorage.removeItem("tipo_usuario");
     window.location.href = "./login.html";
 }
-
+// EXIBIR A DATA CORRETAMENTE
 let dateLabel = document.getElementById("dateLabel");
 if (dateLabel) {
     let hoje = new Date();
@@ -37,7 +37,7 @@ let media = 0;
 let alta = 0;
 let maxima = 0;
 let foco = 0;
-
+// ITERAÇÃO PARA CONTABILIZAR OS NIVEIS DE PRODUTIVIDADE
 for (let i = 0; i < checkins.length; i++) {
     if (checkins[i].produtividade >= 3) {
         produtivos++;
@@ -64,7 +64,7 @@ prodBar.style.width = porcentagemProd + "%";
 compBar.style.width = porcentagemRec + "%";
 prodBadge.innerHTML = total + " check-in(s)";
 compBadge.innerHTML = reclamacoes + " registro(s)";
-
+// INSERÇÃO DAS QUANTIDADES
 prodChart.innerHTML = `
     <div class="prod-row">
         <div class="prod-row-top"><span>Baixa </span><span>${baixa}</span></div>
@@ -96,7 +96,7 @@ if (reclamacoes == 0) {
     complaintList.innerHTML = `<p>Nenhuma reclamação registrada.</p>`;
 } else {
     let lista = "";
-
+    // (QUASE) A MESMA COISA PARA RECLAMAÇÕES
     for (let i = 0; i < checkins.length; i++) {
         if (checkins[i].reclamacao != "" || checkins[i].categoria != "") {
             lista += `
