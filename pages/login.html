@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/login.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Login - VitalCorp</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body>
+<body class="login">
+    <div class="form-login">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
 
-    <main>
-        <form action="#" class="form-login">
-            <div>
-                <h1>LOGIN</h1>
+                <form action="" class="form-content">
+                    <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+                    <div class="form-div form-div-one">
+                        <div class="form-icon">
+                            <i class="bx ri-account-circle-line"></i>
+                        </div>
+
+                        <div class="form-div-input">
+                            <label for="" class="form-label">UsuÃ¡rio</label>
+                            <input type="text" class="form-input">
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <div class="form-icon">
+                            <i class="bx ri-lock-line"></i>
+                        </div>
+
+                        <div class="form-div-input">
+                            <label for="" class="form-label">Senha</label>
+                            <input type="password" class="form-input">
+                        </div>
+                    </div>
+                    <a href="#" class="form-forgot">Esqueceu a Senha?</a>
+
+                    <input type="submit" class="form-button" value="Entrar">
+
+                    <div class="form-social">
+                        <span class="form-social-text">Ou entre com</span>
+
+                        <a href="#" class="form-social-icon"><i class="bx ri-github-fill"></i></a>
+                        <a href="#" class="form-social-icon"><i class="bx ri-google-fill"></i></a>
+                    </div>
+                </form>
             </div>
-            <div class="usuario input-set">
-                <label for="usuario">Digite seu usuario</label>
-                <input class="input-login" type="text" name="usuario" id="usuario">
-            </div>
-            
-            <div class="senha input-set">
-                <label for="senha">Senha</label>
-                <input class="input-login" type="text" name="senha" id="senha">
-            </div>
-    
-            <button type="button" class="button-login" onclick="login()">Entrar</button>
-            <span>Não tem login? Então <a href="./cadastro.html">cadastra-se</a></span>
-        </form>
-    </main>
-    
-    
-    <script src="../script/login.js"></script>
+
+        </div>
+    <script src="../main.js"></script>
 </body>
 </html>
