@@ -34,7 +34,7 @@ img{display: block;max-width: 100%;}
 /* nav */
 .navbar{position:sticky;top:0;z-index:100;background:rgba(250,249,247,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:.85rem 0;transition:var(--transition);}
 .navbar-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
-.navbar-logo{display:flex;align-items:center;}
+.navbar-logo{display:flex;align-items:center;padding-bottom: 5%;}
 .navbar-logo img{height:60px;width:auto;}
 .nav-links{display:flex;align-items:center;gap:2rem;flex:1;justify-content:center;}
 .nav-links a{font-size:.875rem;font-weight:500;color:var(--text-mind);}
@@ -106,7 +106,7 @@ img{display: block;max-width: 100%;}
 .form-button:active{transform:translateY(0);}
 .form-social{text-align:center;}
 .form-social-text{display:block;font-size:.85rem;margin-bottom:.9rem;color:var(--text-mind);}
-.form-social-icon{display:inline-flex;justify-content:center;align-items:center;width:36px;height:36px;margin:0 .4rem;background-color:var(--text-dark);color:#fff;font-size:1.15rem;border-radius:50%;text-decoration:none;transition:var(--transition);}
+.form-social-icon{display:inline-flex;justify-content:center;align-items:center;width:36px;height:36px;margin:0 .4rem;background-color:#192064;color:#fff;font-size:1.15rem;border-radius:50%;text-decoration:none;transition:var(--transition);}
 .form-social-icon:hover{background-color:var(--primary-color);}
 /* dashbord */
 .page-wrap{max-width:1140px;margin:auto;padding:2rem 1.5rem 4rem;}
@@ -143,7 +143,7 @@ img{display: block;max-width: 100%;}
 .complaint-dot{width:8px;height:8px;border-radius:50%;background:#ef4444;margin-top:.45rem;flex-shrink:0;}
 .complaint-text{font-size:.85rem;color:var(--text-dark);line-height:1.6;flex:1;}
 .complaint-cat{font-size:.72rem;font-weight:600;color:var(--text-mind);white-space:nowrap;margin-top:.15rem;}
-/* cheking */
+/* check-in */
 .checkin-wrap{max-width:680px;margin:auto;padding:2.5rem 1.5rem 4rem;}
 .termo-steps{display:flex;justify-content:center;flex-wrap:wrap;}
 .termo-btn{display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:.9rem .75rem;border:transparent;background:transparent;cursor:pointer;transition:var(--transition);width:110px;flex-shrink:0;}
