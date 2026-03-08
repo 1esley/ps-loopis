@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
+    <title>Login - VitalCorp</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="login">
+    <div class="form-login">
+            <div class="shape1"></div>
+            <div class="shape2"></div>
+
+                <form id="loginForm" class="form-content">
+                    <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+                    <div class="form-div form-div-one">
+                        <div class="form-icon">
+                            <i class="bx ri-hashtag"></i>
+                        </div>
+
+                        <div class="form-div-input">
+                            <label for="" class="form-label"></label>
+                            <input type="text" class="form-input" placeholder="Matrícula" id="matricula">
+                        </div>
+                    </div>
+
+                    <div class="form-div">
+                        <div class="form-icon">
+                            <i class="bx ri-lock-line"></i>
+                        </div>
+
+                        <div class="form-div-input">
+                            <label for="" class="form-label"></label>
+                            <input type="password" class="form-input" placeholder="Senha" id="senha">
+                        </div>
+                    </div>
+                    <a href="#" class="form-forgot">Esqueceu a Senha?</a>
+
+                    <button type="button" class="form-button" onclick="login()">Entrar</button>
+
+                    <span id="message" style="padding-bottom: 10%;"></span>
+                    <div class="form-social">
+                        <span class="form-social-text">Ainda não possui conta? Cadastre-se no VitalCorp</span>
+
+                        <a href="../pages/cadastro.html" class="form-social-icon"><i class="bx ri-flower-fill"></i></a>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    <script src="../script/login.js"></script>
+</body>
+</html>

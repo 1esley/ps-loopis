@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles.css">
-  <title>Painel RH</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Painel RH - VitalCorp</title>
 </head>
 <body class="dashborard"> 
     <nav class="navbar">
         <div class="container navbar-inner">
-          <a href="./index.htm" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
+          <a href="./index.html" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
 
         <div class="nav_right">
             <span class="badge-restricted"><i class="ri-lock-2-line"></i> Acesso restrito</span>
             <button class="btn-outline btn-outline-primary" onclick="window.print()">
                 <i class="ri-file-pdf-line"></i> Salvar PDF
             </button>
-            <a href="./login.html" class="btn-outline btn-outline-muted">
+            <a href="#" class="btn-outline btn-outline-muted" onclick="logout()">
                 <i class="ri-logout-box-r-line"></i> Sair
             </a>
         </div>
@@ -40,7 +40,7 @@
     <div class="kpi-row">
         <div class="kpi">
             <div style="flex:1">
-                <div class="kpi-val" id="prodPct">—</div>
+                <div class="kpi-val" id="prodPorct">—</div>
                 <div class="kpi-label">Se sentem produtivos</div>
                 <div class="mini-bar-wrap">
                     <div class="mini-bar" id="prodBar"></div>
@@ -82,6 +82,6 @@
     </div>
   </div>
 
-  <script src="../main.js"></script>
+  <script src="../script/dash.js"></script>
 </body>
 </html>
