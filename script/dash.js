@@ -1,4 +1,7 @@
-
+function logout() {
+    localStorage.removeItem("usuario_logado");
+    window.location.href = "./login.html";
+}
 // EXIBIR A DATA CORRETAMENTE
 let dateLabel = document.getElementById("dateLabel");
 if (dateLabel) {

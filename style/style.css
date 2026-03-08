@@ -169,7 +169,7 @@ img{display: block;max-width: 100%;}
 .success-state i{font-size:3rem;color:#2e7d32;margin-bottom:1rem;}
 .success-state h2{font-size:1.2rem;font-weight:800;color:var(--text-dark);margin-bottom:.4rem;}
 .success-state p{font-size:.85rem;color:var(--text-mind);}
-
+/* modal admin */
 #passwordModal{
   display:none;
   position:fixed;
