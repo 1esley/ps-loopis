@@ -12,7 +12,7 @@
     <div class="container navbar-inner">
       <a href="./index.html" class="navbar-logo"><img src="../assets/logo.png" alt="Logo VitalCorp"></a>
       <div class="nav_right">
-        <a href="./dashborard.html" class="nav-admin"><i class="ri-lock-2-line"></i>Painel RH</a>
+        <a href="#" class="nav-admin" onclick="abrirModal()"><i class="ri-lock-2-line"></i>Painel RH</a>
         <a href="#" class="nav-admin" onclick="logout()"><i class="ri-logout-box-r-line"></i> Sair</a>
       </div>
     </div>
@@ -91,6 +91,21 @@
       <p>Obrigado. Sua resposta foi registrada de forma anônima.</p>
     </div>
 
+  </div>
+
+  <div id="passwordModal" >
+    <div class="modal-content">
+      <h3>Senha de admin</h3>
+
+      <input type="password" id="adminPassword" placeholder="Digite a senha" >
+
+      <div class="botoes-admin">
+        <button onclick="fecharModal()" class="button-admin button-cancel" id="">Cancelar</button>
+        <button onclick="checkPassword()" class="button-admin button-success">Entrar</button>
+      </div>
+
+      <p id="modalMessage"></p>
+    </div>
   </div>
 
   <script src="../script/script.js"></script>
