@@ -1,16 +1,4 @@
-let usuario = localStorage.getItem("usuario_logado");
-let tipoUsuario = localStorage.getItem("tipo_usuario");
 
-// DESCOMENTAR ASSIM QUE RESOLVER O LOGIN/CADASTRO
-// if (!usuario || tipoUsuario != "admin") {
-//     window.location.href = "./login.html";
-// }
-
-function logout() {
-    localStorage.removeItem("usuario_logado");
-    localStorage.removeItem("tipo_usuario");
-    window.location.href = "./login.html";
-}
 // EXIBIR A DATA CORRETAMENTE
 let dateLabel = document.getElementById("dateLabel");
 if (dateLabel) {

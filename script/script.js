@@ -1,15 +1,11 @@
 //VERIFICAR SE EXISTE USUARIO LOGADO, CASO NAO, VOLTAR PARA PAGINA DE LOGIN
-// (COMENTEI PARA CONSEGUIR VER A PAGINA [O LOGIN ESTA COM DEFEITO])
-
-// let usuario = localStorage.getItem("usuario_logado");
-// let tipoUsuario = localStorage.getItem("tipo_usuario");
-// if (!usuario) {
-//     window.location.href = "./login.html";
-// }
+let usuario = localStorage.getItem("usuario_logado");
+if (!usuario) {
+    window.location.href = "./login.html";
+}
 
 function logout() {
     localStorage.removeItem("usuario_logado");
-    localStorage.removeItem("tipo_usuario");
     window.location.href = "./login.html";
 }
 // EXIBIR DATA CORRETA

@@ -22,7 +22,7 @@
 
                     <div class="form-div-input">
                         <label for="" class="form-label"></label>
-                        <input type="text" id="matricula" class="form-input" placeholder="Matrícula">
+                        <input type="text" class="form-input" placeholder="Matrícula" id="matricula_cadastro">
                     </div>
 
                 </div>
@@ -34,7 +34,7 @@
     
                     <div class="form-div-input">
                         <label for="" class="form-label"></label>
-                        <input type="text" id="userCadastro" class="form-input" placeholder="Usuário">
+                        <input type="text" class="form-input" placeholder="Usuário" id="usuario_cadastro">
                     </div>
                     
                 </div>
@@ -46,13 +46,14 @@
 
                     <div class="form-div-input">
                         <label for="" class="form-label"></label>
-                        <input type="password" id="senhaCadastro" class="form-input" placeholder="Senha">
+                        <input type="password" class="form-input" placeholder="Senha" id="senha_cadastro">
                     </div>
                 </div>
 
-                <input type="submit" class="form-button" value="Cadastrar">
+                <button type="button" class="form-button" onclick="cadastro()">Cadastrar</button>
                 
-            </form>
+                <span id="message"></span>
+            </form> 
         </div>
 
     </div>
