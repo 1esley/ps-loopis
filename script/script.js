@@ -71,3 +71,22 @@ if (botaoEnviar) {
         document.getElementById("successCard").style.display = "flex";
     });
 }
+
+function abrirModal(){
+    document.getElementById("passwordModal").style.display = "flex";
+}
+function fecharModal(){
+    document.getElementById("passwordModal").style.display = "none";
+
+}
+function checkPassword(){
+
+    const senha = document.getElementById("adminPassword").value;
+
+    if(senha === "admin123"){
+        window.location.href = "dashborard.html";
+    }else{
+        document.getElementById("modalMessage").innerText = "Senha incorreta!";
+    }
+
+}

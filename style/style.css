@@ -170,6 +170,58 @@ img{display: block;max-width: 100%;}
 .success-state h2{font-size:1.2rem;font-weight:800;color:var(--text-dark);margin-bottom:.4rem;}
 .success-state p{font-size:.85rem;color:var(--text-mind);}
 
+#passwordModal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  justify-content:center;
+  align-items:center;
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  text-align: center;
+}
+
+.botoes-admin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+#adminPassword{
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+}
+
+.button-admin{
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button-success{
+  background-color: #676cc8;
+}
+
+.button-cancel{
+  background-color: #ff0101ac;
+}
 @media(max-width:900px){
   .nav_links{display:flex;flex-direction:column;align-items:flex-start;gap:0;position:absolute;top:calc(100% + 1px);left:0;right:0;background:#faf9f7f7;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1),padding .35s;}
   .nav_links.open{max-height:300px;padding:.75rem 1.5rem 1rem;}
